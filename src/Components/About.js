@@ -12,7 +12,7 @@ function About() {
 
       <div className="about-text-content">
         <h3 className="about-title">
-          <span>About Us</span>
+          <span>About Us </span>
         </h3>
         <p className="about-description">
          Welcome to Health Plus – your reliable companion in personalized and accessible healthcare.
