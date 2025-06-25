@@ -36,14 +36,12 @@ function Hero() {
     <div className="section-container">
       <div className="hero-section">
         <div className="text-section">
-          <p className="text-headline">❤️ Health comes first</p>
+          <p className="text-headline">❤️ Well-beingis the foundation of everything.</p>
           <h2 className="text-title">
-            Find your Doctor and make an Appointments
+            Search for  a Doctor and make an Appointments
           </h2>
           <p className="text-descritpion">
-            Talk to online doctors and get medical advice, online prescriptions,
-            refills and medical notes within minutes. On-demand healthcare
-            services at your fingertips.
+           Chat with online doctors and get medical devices prescriptions refills, and medical notes all from home on demand healthcare in just 15 minutes right at your fingertips
           </p>
           <button
             className="text-appointment-btn"

@@ -15,10 +15,7 @@ function Doctors() {
         </h3>
 
         <p className="dt-description">
-          Meet our exceptional team of specialist doctors, dedicated to
-          providing top-notch healthcare services at Health Plus. Trust in their
-          knowledge and experience to lead you towards a healthier and happier
-          life.
+          Connect with our highly qualified team of specialist doctors, committed to delivering advanced, compassionate care at Health Plus. Their expertise ensures you receive the highest standard of treatment for a healthier future.
         </p>
       </div>
 

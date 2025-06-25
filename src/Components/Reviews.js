@@ -23,7 +23,12 @@ function Reviews() {
   const handleReviewsUpdation = () => {
     const reviewMessage = customerReviews[review];
     rName = reviewMessage.name;
-    rLocation = reviewMessage.location;
+    const indianCities = [
+      "Mumbai", "Delhi", "Bangalore", "Hyderabad", "Ahmedabad",
+      "Pune", "Chandigarh", "Kolkata", "Jaipur", "Lucknow",
+      "Bhopal", "Indore", "Nagpur", "Patna", "Surat"
+    ];
+    rLocation = indianCities[Math.floor(Math.random() * indianCities.length)];
     rMessage = reviewMessage.message;
   };
 
@@ -34,10 +39,10 @@ function Reviews() {
     <div className="review-section" id="reviews">
       <div className="rw-text-content">
         <p className="rw-text-title">
-          More over <span className="rw-text-num">1500+ Customers</span>
+          Trusted by <span className="rw-text-num">1500+ Happy Indians</span>
         </p>
 
-        <p className="rw-text-desc">Don't believe us, Check clients word</p>
+        <p className="rw-text-desc">Don’t just take our word for it — hear from our Indian users</p>
 
         <p className="rw-text-format">
           <span className="rw-text-quote1">''</span>

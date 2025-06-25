@@ -15,27 +15,25 @@ function About() {
           <span>About Us</span>
         </h3>
         <p className="about-description">
-          Welcome to Health Plus, your trusted partner for accessible and
-          personalized healthcare. Our expert doctors offer online consultations
-          and specialized services, prioritizing your well-being. Join us on
-          this journey towards a healthier you.
+         Welcome to Health Plus – your reliable companion in personalized and accessible healthcare.
+Connect with experienced doctors through secure online consultations and specialized care services tailored to your needs. At Health Plus, your well-being is our top priority. Let’s take the next step together toward a healthier, happier you.
         </p>
 
-        <h4 className="about-text-title">Your Solutions</h4>
+        <h4 className="about-text-title">	How We Help</h4>
 
         <SolutionStep
           title="Choose a Specialist"
-          description="Find your perfect specialist and book with ease at Health Plus. Expert doctors prioritize your health, offering tailored care."
+          description="Book the right specialist quickly and easily with Health Plus. Our expert doctors deliver personalized care tailored to your unique health needs."
         />
 
         <SolutionStep
           title="Make a Schedule"
-          description="Choose the date and time that suits you best, and let our dedicated team of medical professionals ensure your well-being with personalized care."
+          description="Select a convenient date and time for your appointment, and our team will ensure a smooth and personalized healthcare experience."
         />
 
         <SolutionStep
           title="Get Your Solutions"
-          description="Our experienced doctors and specialists are here to provide expert advice and personalized treatment plans, helping you achieve your best possible health."
+          description="Receive expert guidance and personalized care from trusted professionals, designed to support your health journey and long-term wellness."
         />
       </div>
     </div>

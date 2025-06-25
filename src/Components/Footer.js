@@ -13,9 +13,7 @@ function Footer() {
               Health <span className="ft-sign">+</span>
             </p>
             <p className="ft-description">
-              Talk to online doctors and get medical advice, online
-              prescriptions, refills and medical notes within minutes. On-demand
-              healthcare services at your fingertips.
+              Instantly connect with certified doctors for medical advice, prescription refills, and essential health documents. Trusted healthcare support, anytime and anywhere in India.
             </p>
           </div>
 
@@ -86,7 +84,7 @@ function Footer() {
       </div>
 
       <div className="ft-copyright">
-        <p>© 2013-2023 Health+. All rights reserved.</p>
+        <p>© Health+. All rights reserved.</p>
 
         <ul className="ft-social-links">
           <li>

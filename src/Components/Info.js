@@ -8,44 +8,31 @@ function Info() {
     <div className="info-section" id="services">
       <div className="info-title-content">
         <h3 className="info-title">
-          <span>What We Do</span>
+          <span>Our Services</span>
         </h3>
         <p className="info-description">
-          We bring healthcare to your convenience, offering a comprehensive
-          range of on-demand medical services tailored to your needs. Our
-          platform allows you to connect with experienced online doctors who
-          provide expert medical advice, issue online prescriptions, and offer
-          quick refills whenever you require them.
+          
+We make healthcare easy and accessible by offering a full range of on-demand medical services. Our platform connects you with experienced online doctors who provide expert medical advice, issue digital prescriptions, and offer fast refills whenever you need them — all from the comfort of your home
         </p>
       </div>
 
       <div className="info-cards-content">
         <InformationCard
           title="Emergency Care"
-          description="Our Emergency Care service is designed to be your reliable support
-            in critical situations. Whether it's a sudden illness, injury, or
-            any medical concern that requires immediate attention, our team of
-            dedicated healthcare professionals is available 24/7 to provide
-            prompt and efficient care."
+          description="Our emergency care service is here to support you when it matters most. Whether it’s a sudden illness, injury, or urgent medical concern, our dedicated healthcare team is available 24/7 to provide fast and reliable care. We understand that emergencies can be stressful, so we strive to deliver compassionate and efficient service to ensure your well-being."
           icon={faTruckMedical}
         />
 
         <InformationCard
           title="Heart Disease"
-          description="Our team of experienced cardiologists and medical experts use
-            state-of-the-art technology to assess your cardiovascular health and
-            design personalized treatment plans. From comprehensive screenings
-            to advanced interventions, we are committed to helping you maintain
-            a healthy heart and lead a fulfilling life."
+          description="Our team of experienced cardiologists and medical specialists use advanced technology to assess your heart health and create personalized treatment plans. From in-depth screenings to advanced procedures, we’re dedicated to helping you maintain a strong heart and live a full, healthy life. Whether you need routine check-ups or specialized care, we’re here to support you every step of the way."
           icon={faHeartPulse}
         />
 
         <InformationCard
           title="Dental Care"
-          description="Smile with confidence as our Dental Care services cater to all your
-            oral health needs. Our skilled dentists provide a wide range of
-            treatments, from routine check-ups and cleanings to cosmetic
-            procedures and restorative treatments."
+          description="
+Smile with confidence! Our dental care services cover all your oral health needs. From routine check-ups and cleanings to cosmetic treatments and advanced procedures, our skilled dentists are here to keep your smile healthy and brigh.  We use the latest techniques and technology to ensure your comfort and satisfaction. Whether you need a simple filling or a complete smile makeover, we’re committed to providing exceptional dental care tailored to your needs."
           icon={faTooth}
         />
       </div>

@@ -26,11 +26,10 @@ function BookAppointment() {
           <span>Why Choose Health</span>
         </h3>
         <p className="ba-description">
-          Discover the reasons to choose Health Plus for your healthcare needs.
-          Experience expert care, convenience, and personalized solutions,
-          making your well-being our top priority. Join us on a journey to
-          better health and a happier life.
+          Choose Health Plus for trusted and personalized healthcare solutions.
+          Our expert team is dedicated to providing convenient, compassionate, and high-quality care that supports your journey to better health and well-being.
         </p>
+       
 
         <p className="ba-checks ba-check-first">
           <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Best Professional Doctors

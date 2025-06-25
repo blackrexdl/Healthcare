@@ -96,7 +96,7 @@ function AppointmentForm() {
 
           <br />
           <label>
-            Patient Phone Number:
+             Phone Number:
             <input
               type="text"
               value={patientNumber}
@@ -108,7 +108,7 @@ function AppointmentForm() {
 
           <br />
           <label>
-            Patient Gender:
+             Gender:
             <select
               value={patientGender}
               onChange={(e) => setPatientGender(e.target.value)}
@@ -159,7 +159,7 @@ function AppointmentForm() {
       </div>
 
       <div className="legal-footer">
-        <p>© 2013-2023 Health+. All rights reserved.</p>
+        <p>© Health+. All rights reserved.</p>
       </div>
 
       <ToastContainer autoClose={5000} limit={1} closeButton={false} />

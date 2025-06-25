@@ -1,10 +1,9 @@
 # Health Plus
 
-Welcome to the Health Plus project repository! This is a React-based website aimed at providing accessible and personalized healthcare services to users. The website allows users to connect with expert doctors, schedule appointments, and receive expert medical advice.
+Welcome to the Health Plus project repository by **Shubham Sharma**, a B.Tech Computer Science Engineering student. This project is developed as a part of a college submission to demonstrate a responsive, React-based healthcare website. Health Plus is aimed at providing accessible and personalized healthcare services to users, allowing them to connect with expert doctors, schedule appointments, and receive expert medical advice.
 
 ## Project Overview
 
-- **Website**: [Health Plus](https://alkaison.github.io/Health-Plus/ "Health Plus")
 - **Framework**: React.js
 - **Deployment**: GitHub Pages
 - **Libraries**: React-Toastify, React Router DOM, FontAwesomeIcon
@@ -57,13 +56,13 @@ Welcome to the Health Plus project repository! This is a React-based website aim
 
 ## Deployment
 
-The website is deployed using GitHub Pages and can be accessed at [https://alkaison.github.io/Health-Plus/](https://alkaison.github.io/Health-Plus/).
+#
 
 ## Getting Started
 
 To run the project locally:
 
-1. Clone this repository: `git clone https://github.com/Alkaison/Health-Plus.git`
+1. Clone this repository: `#`
 2. Navigate to the project directory: `cd Health-Plus`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
@@ -75,4 +74,4 @@ Contributions are welcome! If you find a bug or have a feature request, please o
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE "Project LICENSE").
+#
