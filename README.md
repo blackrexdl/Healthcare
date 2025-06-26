@@ -56,7 +56,7 @@ Welcome to the Health Plus project repository by **Shubham Sharma**, a B.Tech Co
 
 ## Deployment
 
-# https://github.com/blackrexdl/Healthcare?tab=readme-ov-file#hero-section
+https://github.com/blackrexdl/Healthcare?tab=readme-ov-file#hero-section
 
 ## Getting Started
 
