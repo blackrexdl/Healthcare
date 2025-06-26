@@ -2,7 +2,7 @@ import React from "react";
 
 import { useEffect, useState } from "react";
 
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
 import Legal from "./Pages/Legal";
