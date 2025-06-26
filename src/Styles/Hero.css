@@ -47,11 +47,41 @@
     letter-spacing: .8px;
     cursor: pointer;
     transition: all .4s ease;
+    position: relative;
 }
 .text-appointment-btn:hover {
     color: #1A8EFD;
     background-color: transparent;
     border: 1px solid #1A8EFD;
+}
+.text-appointment-btn.loading {
+    pointer-events: none;
+    color: transparent;
+    border-color: #1A8EFD;
+    position: relative;
+}
+
+.text-appointment-btn.loading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin: -9px 0 0 -9px;
+    border: 3px solid #ffffff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: rotate-spinner 1s ease-in-out infinite;
+}
+
+@keyframes rotate-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .text-stats {
     margin-top: 40px;
@@ -85,6 +115,9 @@
 .hero-image1 {
     width: 100%;
     height: auto;
+    max-width: 400px;
+    min-width: 280px;
+    object-fit: contain;
 }
 /* Scroll Btn */
 .scroll-up {
@@ -111,7 +144,10 @@
 /* Responsive */
 @media screen and (max-width: 900px) {
     .hero-image-section {
-        display: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 24px 0;
     }
     .text-section {
         width: 100%;
@@ -146,5 +182,10 @@
     .scroll-up {
         bottom: 32px;
         right: 32px;
+    }
+    .hero-image1 {
+        width: 90%;
+        max-width: 320px;
+        min-width: 240px;
     }
 }

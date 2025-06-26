@@ -15,6 +15,13 @@
 .about-image1 {
     width: 80%;
     height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image1:hover {
+    transform: scale(1.05);
 }
 /* Text */
 .about-text-content {

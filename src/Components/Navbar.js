@@ -12,6 +12,9 @@ import { toast } from "react-toastify";
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const [showAssistant, setShowAssistant] = useState(false);
+  const [messages, setMessages] = useState([]);
+  const [inputText, setInputText] = useState("");
 
   const openNav = () => {
     setNav(!nav);
@@ -19,12 +22,29 @@ function Navbar() {
 
   const handleChatBtnClick = () => {
     if (!isButtonDisabled) {
-      toast.info("Experiencing high traffic, Please wait a moment.", {
-        position: toast.POSITION.TOP_CENTER,
-        onOpen: () => setIsButtonDisabled(true),
-        onClose: () => setIsButtonDisabled(false),
-      });
+      setShowAssistant(!showAssistant);
     }
+  };
+
+  const handleUserMessage = () => {
+    if (inputText.trim() === "") return;
+
+    const userInput = inputText.toLowerCase();
+    const newMessages = [...messages, { from: "user", text: inputText }];
+    let reply;
+
+    if (userInput.includes("nic") || userInput.includes("parac")) {
+      reply = "🟢 NICIP and Paracetamol are used to relieve pain and reduce fever. Always follow the dosage instructions provided by your healthcare provider.";
+    } else if (userInput.includes("atrax")) {
+      reply = "🟢 ATRAX 25 is often prescribed to treat anxiety and sleep disorders. It should be taken exactly as directed by your doctor.";
+    } else if (userInput.includes("medicine")) {
+      reply = "💊 Sure, please tell me the name of the medicine or your symptoms.";
+    } else {
+      reply = "🤖 I'm here to help with medical-related questions only.";
+    }
+
+    setMessages([...newMessages, { from: "bot", text: reply }]);
+    setInputText("");
   };
 
   return (
@@ -121,6 +141,36 @@ function Navbar() {
           className="hamb-icon"
         />
       </div>
+      {showAssistant && (
+        <div className="chat-assistant">
+          <div className="chat-header">
+            <h4>Assistant SHUBU 👨‍⚕️</h4>
+            <button onClick={() => setShowAssistant(false)}>X</button>
+          </div>
+          <div className="chat-body">
+            <p>👋 Hi, I'm SHUBU. How can I help you today?</p>
+            <p>💊 You can ask me about your symptoms, get medicine advice, or find a specialist.</p>
+            <div className="chat-messages">
+              {messages.map((msg, index) => (
+                <p key={index} className={`chat-message ${msg.from}`}>
+                  {msg.text}
+                </p>
+              ))}
+            </div>
+            <input
+              type="text"
+              value={inputText}
+              onChange={(e) => setInputText(e.target.value)}
+              placeholder="Type your message..."
+              className="chat-input"
+            />
+            <button onClick={handleUserMessage} className="send-btn">
+              <span>Send</span>
+              <FontAwesomeIcon icon={faCommentDots} />
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
