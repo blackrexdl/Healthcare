@@ -46,6 +46,12 @@
     border-radius: 12px;
     background-color: white;
     position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.info-cards:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
 .info-card-title {
     margin: 32px 0 40px 0;
