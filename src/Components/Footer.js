@@ -13,7 +13,7 @@ function Footer() {
               Health <span className="ft-sign">+</span>
             </p>
             <p className="ft-description">
-              Instantly connect with certified doctors for medical advice, prescription refills, and essential health documents. Trusted healthcare support, anytime and anywhere in India.
+              Instantly connect with certified doctors for medical advice, prescription refills, and essential health documents. Trusted healthcare support—anytime, anywhere in India.
             </p>
           </div>
 
@@ -29,15 +29,10 @@ function Footer() {
             <li>
               <a href="#services">Heart Disease</a>
             </li>
-            <li>
+             <li>
               <a href="#services">Dental Care</a>
             </li>
-            <li>
-              <a href="#services">Prescription</a>
-            </li>
-            <li>
-              <a href="#services">Insights for doctors</a>
-            </li>
+       
           </ul>
         </div>
 
@@ -51,7 +46,7 @@ function Footer() {
               <Link to={"/legal"}>Privacy Policy</Link>
             </li>
             <li>
-              <Link to={"/legal"}>Terms of Services</Link>
+              <Link to={"/legal"}>Terms of Service</Link>
             </li>
             <li>
               <Link to={"/legal"}>Consultations</Link>
@@ -91,6 +86,7 @@ function Footer() {
             <a
               href="https://linkedin.com/in/Alkaison/"
               title="LinkedIn"
+              aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -107,7 +103,8 @@ function Footer() {
           <li>
             <a
               href="https://facebook.com/"
-              title="FaceBook"
+              title="Facebook"
+              aria-label="Facebook"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -125,6 +122,7 @@ function Footer() {
             <a
               href="https://x.com/Alkaison/"
               title="Twitter"
+              aria-label="Twitter"
               target="_blank"
               rel="noopener noreferrer"
             >

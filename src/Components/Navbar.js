@@ -2,28 +2,25 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCommentDots,
-  faBars,
-  faXmark,
+  faMoon,
+  faSun,
 } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
-  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [showAssistant, setShowAssistant] = useState(false);
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState("");
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const openNav = () => {
     setNav(!nav);
   };
 
   const handleChatBtnClick = () => {
-    if (!isButtonDisabled) {
-      setShowAssistant(!showAssistant);
-    }
+    setShowAssistant(!showAssistant);
   };
 
   const handleUserMessage = () => {
@@ -85,9 +82,22 @@ function Navbar() {
       </ul>
 
       <button
+        className="theme-toggle-btn"
+        type="button"
+        aria-label="Toggle dark/light mode"
+        onClick={() => {
+          const currentTheme = document.body.getAttribute("data-theme");
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+          document.body.setAttribute("data-theme", newTheme);
+          setIsDarkMode(newTheme === "dark");
+        }}
+      >
+        <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
+      </button>
+      <button
         className="navbar-btn"
         type="button"
-        disabled={isButtonDisabled}
+        aria-label="Live chat assistant"
         onClick={handleChatBtnClick}
       >
         <FontAwesomeIcon icon={faCommentDots} /> Live Chat
@@ -95,9 +105,7 @@ function Navbar() {
 
       {/* Mobile */}
       <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
-        <div onClick={openNav} className="mobile-navbar-close">
-          <FontAwesomeIcon icon={faXmark} className="hamb-icon" />
-        </div>
+       
 
         <ul className="mobile-navbar-links">
           <li>
@@ -135,18 +143,20 @@ function Navbar() {
 
       {/* Hamburger Icon */}
       <div className="mobile-nav">
-        <FontAwesomeIcon
-          icon={faBars}
-          onClick={openNav}
-          className="hamb-icon"
-        />
+        <div className={`hamburger ${nav ? "open" : ""}`} onClick={openNav}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
+      
       {showAssistant && (
         <div className="chat-assistant">
           <div className="chat-header">
             <h4>Assistant SHUBU 👨‍⚕️</h4>
             <button onClick={() => setShowAssistant(false)}>X</button>
           </div>
+          
           <div className="chat-body">
             <p>👋 Hi, I'm SHUBU. How can I help you today?</p>
             <p>💊 You can ask me about your symptoms, get medicine advice, or find a specialist.</p>
@@ -161,8 +171,8 @@ function Navbar() {
               type="text"
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
-              placeholder="Type your message..."
-              className="chat-input"
+              placeholder="Ask about your symptoms or medicine..."
+              className="chat-input-field"
             />
             <button onClick={handleUserMessage} className="send-btn">
               <span>Send</span>

@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function InformationCard(props) {
   return (
-    <div className="info-cards">
-      <span className="info-card-icon">
+    <div className="info-cards" role="region" aria-label={props.title}>
+      <span className="info-card-icon" aria-hidden="true">
         <FontAwesomeIcon className="info-fa-icon" icon={props.icon} />
       </span>
       <p className="info-card-title">{props.title}</p>

@@ -1,5 +1,5 @@
 import React from "react";
-import Doctor from "../Assets/doctor-group.png";
+import Doctor from "../Assets/doctor-group.png"; // Ensure this file exists in /Assets and is named correctly
 import SolutionStep from "./SolutionStep";
 import "../Styles/About.css";
 

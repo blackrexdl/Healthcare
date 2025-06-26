@@ -1,17 +1,29 @@
+:root {
+  --primary-color: #1A8EFD;
+  --secondary-color: #F3F7FA;
+  --accent-color: #0C6FD8;
+  --font-color: #1A1A1A;
+  --bg-color: #FFFFFF;
+  --border-radius: 12px;
+  --transition: 0.3s ease;
+  --font-family: 'Rubik', sans-serif;
+}
 .doctor-section {
     padding: 32px;
     margin: 0 0 32px 0;
     text-align: center;
-    background-color: white;
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
 }
 .dt-title-content {
     margin: 0 0 64px 0;
 }
 .dt-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
     font-size: 40px;
     font-weight: bold;
     letter-spacing: .7px;
+    color: var(--font-color);
 }
 .dt-title > span {
     position: relative;
@@ -21,7 +33,7 @@
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: #9D2553;
+    background-color: var(--accent-color);
     border-radius: 8px;
     left: 0;
     bottom: -12px;
@@ -29,8 +41,8 @@
 .dt-description {
     margin: 64px auto 0;
     text-align: center;
-    color: rgb(77, 75, 75);
-    font-family: 'Rubik', sans-serif;
+    color: var(--font-color);
+    font-family: var(--font-family);
     font-size: 20px;
     letter-spacing: .8px;
     line-height: 1.8rem;
@@ -49,7 +61,11 @@
     height: 400px;
     gap: 32px;
     text-align: left;
-    font-family: 'Rubik', sans-serif;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    font-family: var(--font-family);
 }
 .dt-card-img {
     width: 100%;
@@ -64,25 +80,24 @@
     font-size: 22px;
     font-weight: bold;
     letter-spacing: .7px;
+    font-family: var(--font-family);
+    color: var(--font-color);
 }
 .dt-card-title {
     margin: 6px 0 8px;
-    color: #494949;
-    font-family: 'Poppins', sans-serif;
+    color: var(--font-color);
+    font-family: var(--font-family);
     font-size: 18px;
     letter-spacing: .7px;
 }
-.dt-card-stars {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: .7px;
-}
-.dt-card-reviews {
-    color: #5a5a5a;
+.dt-card-stars, .dt-card-reviews {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: .7px;
+    font-family: var(--font-family);
+    color: var(--font-color);
 }
+/* .dt-card-reviews can be styled further for accent if desired */
 /* Responsive */
 @media screen and (max-width: 700px) {
     .dt-title {

@@ -1,10 +1,21 @@
+:root {
+  --primary-color: #1A8EFD;
+  --secondary-color: #F3F7FA;
+  --accent-color: #0C6FD8;
+  --font-color: #1A1A1A;
+  --bg-color: #FFFFFF;
+  --border-radius: 12px;
+  --transition: 0.3s ease;
+  --font-family: 'Rubik', sans-serif;
+}
 .hero-section {
     padding: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
-    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+    background: linear-gradient(to right, var(--secondary-color), var(--bg-color));
+    font-family: var(--font-family);
 }
 /* Text section */
 .text-section {
@@ -13,24 +24,24 @@
 }
 .text-headline {
     margin-bottom: 12px;
-    color: rgb(77, 75, 75);
-    font-family: 'Rubik', sans-serif;
+    color: var(--font-color);
+    font-family: var(--font-family);
     font-size: 22px;
     font-weight: bold;
     letter-spacing: .7px;
 }
 .text-title {
     width: 500px;
-    color: black;
-    font-family: 'Poppins', sans-serif;
+    color: var(--font-color);
+    font-family: var(--font-family);
     font-size: 40px;
     font-weight: bold;
 }
 .text-descritpion {
     width: 475px;
     margin: 32px 0;
-    color: rgb(77, 75, 75);
-    font-family: 'Rubik', sans-serif;
+    color: var(--font-color);
+    font-family: var(--font-family);
     font-size: 18px;
     letter-spacing: .7px;
     line-height: 1.6rem;
@@ -39,25 +50,25 @@
     padding: 14px 20px;
     color: white;
     border: 1px solid transparent;
-    border-radius: 28px;
+    border-radius: var(--border-radius);
     outline: transparent;
-    background-color: #1A8EFD;
+    background-color: var(--primary-color);
     font-size: 18px;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--font-family);
     letter-spacing: .8px;
     cursor: pointer;
-    transition: all .4s ease;
+    transition: var(--transition);
     position: relative;
 }
 .text-appointment-btn:hover {
-    color: #1A8EFD;
+    color: var(--primary-color);
     background-color: transparent;
-    border: 1px solid #1A8EFD;
+    border: 1px solid var(--primary-color);
 }
 .text-appointment-btn.loading {
     pointer-events: none;
     color: transparent;
-    border-color: #1A8EFD;
+    border-color: var(--primary-color);
     position: relative;
 }
 
@@ -101,8 +112,8 @@
 }
 .text-stats-container p:first-child {
     margin-bottom: 8px;
-    color: #1A8EFD;
-    font-family: 'Rubik', sans-serif;
+    color: var(--primary-color);
+    font-family: var(--font-family);
     font-size: 32px;
     font-weight: bold;
 }
@@ -130,7 +141,7 @@
     color: white;
     border: 3px solid white;
     border-radius: 50%;
-    background-color: #1A8EFD;
+    background-color: var(--primary-color);
     position: fixed;
     bottom: 50px;
     right: 50px;

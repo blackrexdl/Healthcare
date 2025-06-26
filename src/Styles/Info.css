@@ -1,15 +1,27 @@
+:root {
+    --primary-color: #1A8EFD;
+    --secondary-color: #F3F7FA;
+    --accent-color: #0C6FD8;
+    --font-color: #1A1A1A;
+    --bg-color: #FFFFFF;
+    --border-radius: 12px;
+    --transition: 0.3s ease;
+    --font-family: 'Rubik', sans-serif;
+}
 .info-section {
     padding: 0 32px;
     text-align: center;
-    background-color: white;
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
 }
 .info-title-content {
     margin: 64px 0 128px 0;
 }
 .info-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
     font-size: 40px;
     font-weight: bold;
+    color: var(--font-color);
 }
 .info-title > span {
     position: relative;
@@ -19,19 +31,38 @@
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: #9D2553;
+    background-color: var(--accent-color);
     border-radius: 8px;
     left: 0;
     bottom: -12px;
 }
-.info-description {
-    margin: 64px;
-    text-align: center;
-    color: rgb(77, 75, 75);
-    font-family: 'Rubik', sans-serif;
+.info-description, .info-card-description, .info-card-title {
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+.info-card-title {
+    margin: 32px 0 40px 0;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+.info-card-description {
+    margin: 24px;
     font-size: 18px;
     letter-spacing: .8px;
-    line-height: 1.8rem;
+    line-height: 1.5rem;
+}
+.info-card-icon {
+    position: absolute;
+    top: -24px;
+    left: 44%;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+}
+.info-fa-icon {
+    color: var(--primary-color);
+    font-size: 24px;
 }
 /* Cards */
 .info-cards-content {
@@ -43,43 +74,20 @@
 .info-cards {
     height: auto;
     border: 2px solid #d7d3d3;
-    border-radius: 12px;
-    background-color: white;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
     position: relative;
-    transition: all 0.3s ease-in-out;
+    transition: var(--transition);
 }
 .info-cards:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
 }
-.info-card-title {
-    margin: 32px 0 40px 0;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: 28px;
-    font-weight: bold;
+.info-description {
+    margin: 64px;
+    text-align: center;
     letter-spacing: .8px;
-}
-.info-card-description {
-    margin: 24px;
-    color: rgb(77, 75, 75);
-    font-family: 'Rubik', sans-serif;
-    font-size: 18px;
-    letter-spacing: .8px;
-    line-height: 1.5rem;
-}
-.info-card-icon {
-    position: absolute;
-    top: -24px;
-    left: 44%;
-    padding: 10px;
-    background-color: #DCE6FF;
-    border-radius: 30px;
-}
-.info-fa-icon {
-    color: #2C96FF;
-    font-size: 24px;
+    line-height: 1.8rem;
 }
 /* Responsive */
 @media screen and (max-width: 1000px) {

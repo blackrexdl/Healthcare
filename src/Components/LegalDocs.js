@@ -5,12 +5,12 @@ import "../Styles/LegalDocs.css";
 function LegalDocs() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+  }, []);
 
   return (
     <div className="legal-section-title">
       <h1 className="legal-siteTitle">
-        <Link to="/">
+        <Link to="/" aria-label="Go to homepage" className="legal-home-link">
           Health <span className="legal-siteSign">+</span>
         </Link>
       </h1>

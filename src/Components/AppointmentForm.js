@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 function AppointmentForm() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+  }, []);
 
   const [patientName, setPatientName] = useState("");
   const [patientNumber, setPatientNumber] = useState("");
@@ -96,7 +96,7 @@ function AppointmentForm() {
 
           <br />
           <label>
-             Phone Number:
+            Phone Number:
             <input
               type="text"
               value={patientNumber}
@@ -108,7 +108,7 @@ function AppointmentForm() {
 
           <br />
           <label>
-             Gender:
+            Gender:
             <select
               value={patientGender}
               onChange={(e) => setPatientGender(e.target.value)}

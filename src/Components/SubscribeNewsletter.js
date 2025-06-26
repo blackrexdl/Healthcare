@@ -32,22 +32,24 @@ function SubscribeNewsletter() {
 
   return (
     <div className="ft-info-p2">
-      <p className="ft-input-title">Stay Update to our Newsletter</p>
+      <p className="ft-input-title">Stay Updated with Our Newsletter</p>
       <input
-        type="text"
+        type="email"
         inputMode="email"
         className="ft-input"
         placeholder="Enter your email address"
         name="email"
         value={inputEmail}
         onChange={handleEmailInput}
-        autoComplete="true"
+        autoComplete="email"
+        aria-label="Email address input"
       />
       <button
         className="text-appointment-btn"
         type="button"
         disabled={isButtonDisabled}
         onClick={handleBookAppointmentClick}
+        aria-label="Subscribe to newsletter"
       >
         Subscribe
       </button>

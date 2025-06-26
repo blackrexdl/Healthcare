@@ -23,7 +23,7 @@ function BookAppointment() {
 
       <div className="ba-text-content">
         <h3 className="ba-title">
-          <span>Why Choose Health</span>
+          <span>Why Choose HealthPlus</span>
         </h3>
         <p className="ba-description">
           Choose Health Plus for trusted and personalized healthcare solutions.
@@ -32,16 +32,16 @@ function BookAppointment() {
        
 
         <p className="ba-checks ba-check-first">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Best Professional Doctors
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Best Professional Doctors.
         </p>
         <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Emergency Care
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Emergency Care.
         </p>
         <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> 24/7 Support Live Chat
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> 24/7 Support Live Chat.
         </p>
         <p className="ba-checks ba-check-last">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Enrollment Easy and Quick
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Enrollment Easy and Quick.
         </p>
 
         <button
@@ -49,7 +49,8 @@ function BookAppointment() {
           type="button"
           onClick={handleBookAppointmentClick}
         >
-          <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
+          <FontAwesomeIcon icon={faCalendarCheck} />{" "}
+          Book Appointment
         </button>
       </div>
     </div>

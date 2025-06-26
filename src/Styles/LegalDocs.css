@@ -1,54 +1,61 @@
-.legal-text-content{
+:root {
+    --primary-color: #1A8EFD;
+    --secondary-color: #F3F7FA;
+    --accent-color: #0C6FD8;
+    --font-color: #1A1A1A;
+    --bg-color: #FFFFFF;
+    --border-radius: 12px;
+    --transition: 0.3s ease;
+    --font-family: 'Rubik', sans-serif;
+}
+.legal-text-content {
     padding: 12px 32px;
-    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+    background: linear-gradient(to right, var(--secondary-color), var(--bg-color));
+    font-family: var(--font-family);
 }
 /* Title */
-.legal-siteTitle a {
-    text-decoration: none;
-    color: #1A8EFD;
-    font-size: 48px;
-    letter-spacing: .8px;
-}
 .legal-siteTitle {
-    padding: 0 0 8px 0;
-    border-radius: 2px;
-    background-color: white;
+    background-color: var(--bg-color);
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
 }
-.legal-siteSign{
-    color: #54de54;
-    font-family: Cambria, sans-serif;
-    font-size: 56px;
-    font-weight: bold;
+.legal-siteTitle a {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+}
+.legal-siteSign {
+    color: var(--accent-color);
+    font-family: Cambria, serif;
 }
 /* Info */
 .legal-title {
     margin: 16px 0;
     padding: 0 0 2px 0;
-    border-bottom: 2px solid grey;
-    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid var(--primary-color);
+    font-family: var(--font-family);
     font-size: 32px;
     font-weight: bold;
     letter-spacing: .8px;
+    color: var(--font-color);
 }
 .legal-description {
     margin: 0 0 16px 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--font-family);
     font-size: 18px;
     letter-spacing: .8px;
     line-height: 1.8rem;
+    color: var(--font-color);
 }
 /* Footer */
 .legal-footer {
     padding: 24px 40px;
     display: block;
-    color: black;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--font-family);
     font-size: 18px;
     font-weight: bold;
     letter-spacing: .8px;
     line-height: 1.6rem;
+    color: var(--font-color);
 }
 /* Responsive */
 @media screen and (max-width: 600px) {
@@ -58,7 +65,7 @@
     .legal-title {
         font-size: 24px;
     }
-    .legeal-description {
+    .legal-description {
         font-size: 16px;
     }
     .legal-footer {

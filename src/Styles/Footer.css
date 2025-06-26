@@ -1,3 +1,14 @@
+/* Hospital theme variables */
+:root {
+  --primary-color: #1A8EFD;
+  --secondary-color: #F3F7FA;
+  --accent-color: #0C6FD8;
+  --font-color: #1A1A1A;
+  --bg-color: #FFFFFF;
+  --border-radius: 12px;
+  --transition: 0.3s ease;
+  --font-family: 'Rubik', sans-serif;
+}
 .footer-section {
     background-color: #1B2433;
 }
@@ -14,31 +25,31 @@
 }
 /* Title */
 .ft-title {
-    color: #1A8EFD;
+    color: var(--primary-color);
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
     font-size: 40px;
     font-weight: bold;
     letter-spacing: .8px;
 }
 .ft-sign {
-    color: #1ECAB0;
-    font-family: Cambria, sans-serif;
+    color: var(--accent-color);
+    font-family: Cambria, serif;
     font-size: 40px;
     font-weight: bold;
 }
 .ft-description {
     width: 420px;
     margin: 16px 0 40px;
-    color: #D0D3DA;
-    font-family: 'Rubik', sans-serif;
+    color: #d0d3da;
+    font-family: var(--font-family);
     font-size: 20px;
     letter-spacing: .8px;
     line-height: 1.7rem;
 }
 .ft-input-title {
-    color: white;
-    font-family: 'Rubik', sans-serif;
+    color: #d0d3da;
+    font-family: var(--font-family);
     font-size: 22px;
     font-weight: bold;
     letter-spacing: .8px;
@@ -50,9 +61,9 @@
     color: white;
     background-color: #293241;
     border: 1px solid transparent;
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     outline: transparent;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--font-family);
     font-size: 18px;
     letter-spacing: .8px;
 }
@@ -60,24 +71,28 @@
     padding: 14px 18px;
     color: white;
     border: 2px solid transparent;
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     outline: transparent;
-    background-color: #1A8EFD;
+    background-color: var(--primary-color);
     font-size: 18px;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--font-family);
     letter-spacing: .8px;
     cursor: pointer;
-    transition: all .4s ease;
+    transition: var(--transition);
 }
 .ft-btn:hover {
-    color: #1A8EFD;
     background-color: white;
-    border: 2px solid #1A8EFD;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
 }
 /* Lists */
+/* List Titles and Items */
+.ft-list-title, .ft-list-items li {
+    font-family: var(--font-family);
+    color: #ccc;
+}
 .ft-list-title {
     margin: 16px 0;
-    font-family: 'Rubik', sans-serif;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: .8px;
@@ -94,7 +109,6 @@
 }
 .ft-list-items li {
     margin: 24px 0;
-    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: .8px;
@@ -108,8 +122,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: var(--font-family);
     color: #cbcdd3;
-    font-family: 'Rubik', sans-serif;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: .8px;
@@ -139,9 +153,10 @@
 .ft-social-links li a svg path {
     fill: #cbcdd3;
 }
-.ft-social-links li a:hover, .ft-social-links li a:hover svg path {
-    fill: #1A8EFD;
-    border: 2px solid #1A8EFD;
+.ft-social-links li a:hover,
+.ft-social-links li a:hover svg path {
+    fill: var(--primary-color);
+    border: 2px solid var(--primary-color);
 }
 /* Responsive */
 @media screen and (max-width: 700px) {

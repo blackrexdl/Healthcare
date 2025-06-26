@@ -8,12 +8,13 @@ function Info() {
     <div className="info-section" id="services">
       <div className="info-container">
         <div className="info-title-content">
-          <h3 className="info-title">
+          <h3 className="info-title" style={{ marginBottom: "1rem" }}>
             <span>Our Services</span>
           </h3>
           <p className="info-description">
-            
-    We make healthcare easy and accessible by offering a full range of on-demand medical services. Our platform connects you with experienced online doctors who provide expert medical advice, issue digital prescriptions, and offer fast refills whenever you need them — all from the comfort of your home
+            We make healthcare easy and accessible by offering a full range of on-demand medical services.
+            Our platform connects you with experienced online doctors who provide expert medical advice,
+            issue digital prescriptions, and offer fast refills whenever you need them — all from the comfort of your home.
           </p>
         </div>
 
@@ -32,8 +33,7 @@ function Info() {
 
           <InformationCard
             title="Dental Care"
-            description="
-    Smile with confidence! Our dental care services cover all your oral health needs. From routine check-ups and cleanings to cosmetic treatments and advanced procedures, our skilled dentists are here to keep your smile healthy and brigh.  We use the latest techniques and technology to ensure your comfort and satisfaction. Whether you need a simple filling or a complete smile makeover, we’re committed to providing exceptional dental care tailored to your needs."
+            description="Smile with confidence! Our dental care services cover all your oral health needs. From routine check-ups and cleanings to cosmetic treatments and advanced procedures, our skilled dentists are here to keep your smile healthy and bright. We use the latest techniques and technology to ensure your comfort and satisfaction. Whether you need a simple filling or a complete smile makeover, we’re committed to providing exceptional dental care tailored to your needs."
             icon={faTooth}
           />
         </div>

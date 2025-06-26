@@ -2,6 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+:root {
+  --primary-color: #1A8EFD;
+  --secondary-color: #F3F7FA;
+  --accent-color: #0C6FD8;
+  --font-color: #1A1A1A;
+  --bg-color: #FFFFFF;
+  --border-radius: 12px;
+  --transition: 0.3s ease;
+  --font-family: 'Rubik', sans-serif;
+}
+
+body[data-theme="dark"] {
+  --primary-color: #1A8EFD;
+  --secondary-color: #1A1A1A;
+  --accent-color: #66ccff;
+  --font-color: #EDEDED;
+  --bg-color: #121212;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,14 +30,61 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Custom Scroll Bar */
+body {
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+  color: var(--font-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 10px;
 }
+
 ::-webkit-scrollbar-track {
-    background-color: #FFFFFF;
+  background-color: #f0f4f9;
+  border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
-    background-color: #1A8EFD;
-    border-radius: 4rem;
+  background: linear-gradient(var(--primary-color), var(--accent-color));
+  border-radius: 10px;
+  border: 2px solid #f0f4f9;
+}
+.site-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, var(--secondary-color), var(--bg-color));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-circle {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #1A8EFD;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+.loader-text {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  color: #0C6FD8;
+  font-weight: 500;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
