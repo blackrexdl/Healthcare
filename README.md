@@ -20,7 +20,7 @@ Welcome to the Health Plus project repository by **Shubham Sharma**, a B.Tech Co
 
 ### Hero Section
 
-![Health-Plus Image-1](https://i.postimg.cc/0Q4839KN/Health-Plus-Image1.png)
+![Health-Plus Image-1](https://cvws.icloud-content.com/B/AT05qm-4JZsKQlxYG_K0CMBRUUYmAdPJ4kymx3hKQtE29SjpNjslvsHg/img-1.jpeg?o=ArngrmZjMx7kurMKOSrIz6GNaosVb3x3a7C2CyMGZpOe&v=1&x=3&a=CAogkqGpljpZiAIPOYaiRYSjZRunKPWScyqF3WrNYePzfnUSbxC114bm-jIYtbTi5_oyIgEAUgRRUUYmWgQlvsHgaifrNpSTViaZLtiC-CuApngTvVhwErRcJk6ycbefBa1IdyGBhYqnuGJyJynNkkhWaGBWmr239JB_mEXErWtrLLe2fSk7FyVbPtMtRnVLXUYdNg&e=1750953663&fl=&r=f8aafab3-b8a9-4a4b-81d0-e1fc5c6eb1b1-1&k=GW-xdOIj9vYwAvrOi-3KHw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=172&s=gXkTPJE1211NceWb7zCG11i3mWU&cd=i)
 
 ### Information Section
 
