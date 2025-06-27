@@ -221,10 +221,20 @@
         height: 40px;
         font-size: 20px;
     }
+    .hero-image-section {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
     .hero-image1 {
-        width: 90%;
-        max-width: 320px;
-        min-width: 240px;
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        object-fit: contain;
     }
     .text-section {
       width: 100%;
