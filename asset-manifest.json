@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Healthcare/static/css/main.1dadd9f3.css",
-    "main.js": "/Healthcare/static/js/main.7f80d1cf.js",
+    "main.css": "/Healthcare/static/css/main.8e39e055.css",
+    "main.js": "/Healthcare/static/js/main.b4312101.js",
     "static/media/profile-1.png": "/Healthcare/static/media/profile-1.9f52ddcb2fa2a69705b6.png",
     "static/media/doctor-group.png": "/Healthcare/static/media/doctor-group.89425c834405cdfc4d3a.png",
     "static/media/doctor-picture.png": "/Healthcare/static/media/doctor-picture.171052b96d002ab701cb.png",
@@ -10,11 +10,11 @@
     "static/media/doctor-book-appointment.png": "/Healthcare/static/media/doctor-book-appointment.edb3f4ac282ff3fefaec.png",
     "static/media/profile-4.png": "/Healthcare/static/media/profile-4.3c44185ab9c84614038f.png",
     "index.html": "/Healthcare/index.html",
-    "main.1dadd9f3.css.map": "/Healthcare/static/css/main.1dadd9f3.css.map",
-    "main.7f80d1cf.js.map": "/Healthcare/static/js/main.7f80d1cf.js.map"
+    "main.8e39e055.css.map": "/Healthcare/static/css/main.8e39e055.css.map",
+    "main.b4312101.js.map": "/Healthcare/static/js/main.b4312101.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dadd9f3.css",
-    "static/js/main.7f80d1cf.js"
+    "static/css/main.8e39e055.css",
+    "static/js/main.b4312101.js"
   ]
 }
