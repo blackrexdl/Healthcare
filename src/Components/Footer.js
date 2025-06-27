@@ -84,7 +84,7 @@ function Footer() {
         <ul className="ft-social-links">
           <li>
             <a
-              href="https://linkedin.com/in/Alkaison/"
+              href="#"
               title="LinkedIn"
               aria-label="LinkedIn"
               target="_blank"
@@ -102,7 +102,7 @@ function Footer() {
 
           <li>
             <a
-              href="https://facebook.com/"
+              href="#"
               title="Facebook"
               aria-label="Facebook"
               target="_blank"
@@ -120,7 +120,7 @@ function Footer() {
 
           <li>
             <a
-              href="https://x.com/Alkaison/"
+              href="#"
               title="Twitter"
               aria-label="Twitter"
               target="_blank"
