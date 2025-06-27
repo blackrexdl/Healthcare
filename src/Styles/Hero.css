@@ -167,36 +167,70 @@
     .text-title, .text-descritpion {
         width: 100%;
     }
+    .hero-section {
+      flex-direction: column;
+      padding: 24px 16px;
+      align-items: center;
+      gap: 32px;
+    }
 }
 @media screen and (max-width: 600px) {
     .text-headline {
         font-size: 20px;
     }
     .text-title {
+        width: 100%;
         font-size: 28px;
+        text-align: center;
     }
     .text-descritpion {
+        width: 100%;
         font-size: 16px;
+        text-align: center;
     }
     .text-appointment-btn {
-        font-size: 16px;
+        font-size: 14px;
+        padding: 10px 16px;
     }
     .text-stats {
         gap: 18px;
     }
     .text-stats-container > p {
-        font-size: 16px;
+        font-size: 14px;
     }
     .text-stats-container p:first-child {
-        font-size: 22px;
+        font-size: 20px;
     }
     .scroll-up {
         bottom: 32px;
         right: 32px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
     }
     .hero-image1 {
         width: 90%;
         max-width: 320px;
         min-width: 240px;
+    }
+    .text-section {
+      width: 100%;
+      padding: 0 16px;
+      text-align: center;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      max-width: 100%;
+    }
+    .text-title,
+    .text-headline,
+    .text-descritpion {
+      width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      max-width: 100%;
+    }
+    .hero-section {
+      padding: 20px 12px;
+      gap: 24px;
     }
 }
