@@ -221,39 +221,30 @@
         height: 40px;
         font-size: 20px;
     }
-    .hero-image-section {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
+    .hero-section {
+      padding: 16px 12px;
+      gap: 20px;
+      overflow-x: hidden;
     }
-    .hero-image1 {
-        width: 100%;
-        max-width: 280px;
-        height: auto;
-        object-fit: contain;
+    .hero-image-section {
+      width: 40%;
+      max-width: 100%;
+      padding: 0;
+      display: block;
+      text-align: center;
     }
     .text-section {
       width: 100%;
-      padding: 0 16px;
+      padding: 0 12px;
       text-align: center;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      max-width: 100%;
+      overflow-x: hidden;
     }
     .text-title,
-    .text-headline,
-    .text-descritpion {
-      width: 100%;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
+    .text-descritpion,
+    .text-headline {
       max-width: 100%;
-    }
-    .hero-section {
-      padding: 20px 12px;
-      gap: 24px;
+      text-align: center;
+      overflow-wrap: break-word;
+      word-break: break-word;
     }
 }
