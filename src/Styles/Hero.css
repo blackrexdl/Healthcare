@@ -21,6 +21,9 @@
 .text-section {
     width: 60%;
     padding: 0 32px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
 }
 .text-headline {
     margin-bottom: 12px;
@@ -29,22 +32,32 @@
     font-size: 22px;
     font-weight: bold;
     letter-spacing: .7px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.text-title,
+.text-descritpion {
+    width: 100%;
+    color: var(--font-color);
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 .text-title {
-    width: 500px;
-    color: var(--font-color);
-    font-family: var(--font-family);
     font-size: 40px;
     font-weight: bold;
+    max-width: 100%;
 }
 .text-descritpion {
-    width: 475px;
     margin: 32px 0;
-    color: var(--font-color);
-    font-family: var(--font-family);
     font-size: 18px;
     letter-spacing: .7px;
     line-height: 1.6rem;
+    max-width: 100%;
 }
 .text-appointment-btn {
     padding: 14px 20px;
