@@ -51,13 +51,13 @@ Welcome to the Health Plus project repository by **Shubham Sharma**, a B.Tech Co
 
 ![Health-Plus Image-9](https://github.com/blackrexdl/Project-img-s/blob/main/HMS/img-8_optimized_1000.png)
 
-## Deployment
-
-https://github.com/blackrexdl/Healthcare?tab=readme-ov-file#hero-section
 
 ### Footer Section
 
 ![Health-Plus Image-7](https://github.com/blackrexdl/Project-img-s/blob/main/HMS/img-9_optimized.png)
+## Deployment
+
+https://github.com/blackrexdl/Healthcare?tab=readme-ov-file#hero-section
 
 ## Getting Started
 
